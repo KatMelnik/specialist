@@ -1,0 +1,16 @@
+@mixin specialist-card__style {
+  .specialist-card {
+    padding: 15px;
+    box-shadow: $card-shadow;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    background-color: $featured-bg;
+    &.is-featured {
+      border: 1px solid #6c78a9;
+    }
+    h3 {
+      color: $primary;
+      margin: 0 0 10px;
+    }
+  }
+}

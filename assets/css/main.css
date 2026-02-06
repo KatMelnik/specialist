@@ -1,0 +1,75 @@
+.cat-filter {
+  padding: 8px 36px 8px 12px;
+  margin-right: 24px;
+  border-radius: 4px;
+  background-image: url("../images/dropdown.svg");
+  appearance: none;
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  background-color: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2%;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 92%;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    width: calc(100% - 24px);
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+.specialists-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+}
+.specialists-container .specialist-card {
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  background-color: #e9ecec;
+}
+.specialists-container .specialist-card.is-featured {
+  border: 1px solid #6c78a9;
+}
+.specialists-container .specialist-card h3 {
+  color: #021b52;
+  margin: 0 0 10px;
+}
+.specialists-container .specialist-card:hover {
+  transform: translateY(-5px);
+}
+
+.single-specialist .specialist-card {
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  background-color: #e9ecec;
+}
+.single-specialist .specialist-card.is-featured {
+  border: 1px solid #6c78a9;
+}
+.single-specialist .specialist-card h3 {
+  color: #021b52;
+  margin: 0 0 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
