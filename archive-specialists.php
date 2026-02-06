@@ -15,7 +15,8 @@
                 </select>
 
                 <label>
-                    <input type="checkbox" id="featured-filter"> Featured Only
+                    <input type="checkbox" id="featured-filter">
+                    <span class="custom-checkbox"></span> Featured Only
                 </label>
             </div>
 

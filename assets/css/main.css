@@ -11,6 +11,71 @@
   border: 1px solid rgba(128, 128, 128, 0.8);
   box-sizing: border-box;
   cursor: pointer;
+  font-size: 16px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+.filters label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  user-select: none;
+  gap: 10px;
+}
+.filters label input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.filters label input[type=checkbox]:checked ~ .custom-checkbox {
+  background-color: #021b52;
+  border-color: #021b52;
+}
+.filters label input[type=checkbox]:checked ~ .custom-checkbox::after {
+  display: block;
+}
+.filters label .custom-checkbox {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #021b52;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.filters label .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.filters label:hover input ~ .custom-checkbox {
+  background-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .container {

@@ -2,6 +2,17 @@
 @import 'cards';
 @import 'filters';
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+}
 .container {
   max-width: 1440px - 240px;
   width: 100%;
